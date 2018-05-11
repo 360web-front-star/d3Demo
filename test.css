@@ -11,6 +11,14 @@ body {
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+.node-choosed {
+  fill: #fff;
+  font: 12px sans-serif;
+}
+.node-choosed2 {
+  fill: #fff;
+  font: 12px sans-serif;
+}
 .node {
   fill: #fff;
   font: 12px sans-serif;

@@ -33,7 +33,7 @@ d3.json('data2.json', function (error, root) {
     .attr('transform', 'rotate(90)')
   console.log(link)
   // nodes位置
-  const node = svg.selectAll('.node2')
+  const node2 = svg.selectAll('.node2')
     .data(nodes)
     .enter()
     .append('g')
@@ -65,12 +65,12 @@ d3.json('data2.json', function (error, root) {
       }
     })
 
-  node.append('text')
+  node2.append('text')
     .attr('dx', function (d) { return d.children ? 8 : -8 })
     .attr('dy', 3)
     .style('text-anchor', function (d) { return d.children ? 'start' : 'end' })
     .text(function (d) { return d.name })
-  node.append('circle')
+  node2.append('circle')
     .attr('r', 4.5)
 })
 
@@ -96,10 +96,10 @@ d3.json('data.json', function (error, root) {
     .enter()
     .append('path')
     .attr('data-source_name', function (d) {
-      return `${d.source.name}1`
+      return `${d.source.name}a`
     })
     .attr('data-target_name', function (d) {
-      return `${d.target.name}1`
+      return `${d.target.name}a`
     })
     .attr('class', 'link1')
     .attr('d', diagonal)
@@ -126,12 +126,12 @@ d3.json('data.json', function (error, root) {
           }
         })
         d3.select(this).attr('class', 'node node-choosed')
-        d3.selectAll(`[data-target_name='${d.name}1']`).attr('class', 'choosedLink1')
-        d3.selectAll(`[data-source_name='${d.name}1']`).attr('class', 'choosedLink1')
+        d3.selectAll(`[data-target_name='${d.name}a']`).attr('class', 'choosedLink1')
+        d3.selectAll(`[data-source_name='${d.name}a']`).attr('class', 'choosedLink1')
       } else if (d.depth === 2) {
         d3.select(this).attr('class', 'node node-choosed')
-        d3.selectAll(`[data-target_name='${d.name}1']`).attr('class', 'choosedLink1')
-        d3.selectAll(`[data-target_name='${d.parent.name}1']`).attr('class', 'choosedLink1')
+        d3.selectAll(`[data-target_name='${d.name}a']`).attr('class', 'choosedLink1')
+        d3.selectAll(`[data-target_name='${d.parent.name}a']`).attr('class', 'choosedLink1')
       }
     })
   console.log(link)
