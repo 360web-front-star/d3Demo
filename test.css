@@ -1,0 +1,58 @@
+body {
+  background-color: #282828
+}
+.node circle {
+  fill: #fff;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+.node-choosed circle{
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.node {
+  fill: #fff;
+  font: 12px sans-serif;
+}
+.node2 {
+  fill: #fff;
+  font: 12px sans-serif;
+}
+.node2 circle {
+  fill: #fff;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+.node-choosed2 circle{
+  fill: #fff;
+  stroke: red;
+  stroke-width: 1.5px;
+}
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+.link1 {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+.choosedLink1 {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.choosedLink2 {
+  fill: none;
+  stroke: red;
+  stroke-width: 1.5px;
+}
+p {
+  position: absolute;
+  top: 340px;
+  left: 470px;
+  color: #fff;
+}
